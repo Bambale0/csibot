@@ -77,3 +77,7 @@ Fresh gate after the last code change:
 - local secret-pattern scan -> no credential-shaped values found in repository files.
 
 No authenticated GLM generation was sent because this restoration does not contain or read a production API key. The provider request contract is covered with MockTransport tests; a real paid vision smoke remains a deployment-time check.
+
+## GitHub Actions status
+
+PR #1 started CI run 36641256571 for commit bbd3e4b, but GitHub did not start the runner. The annotation says the job was blocked because recent account payments failed or the Actions spending limit needs to be increased. This is an account-level CI infrastructure blocker, not a test failure. The PR is intentionally left unmerged until required checks can run green.
